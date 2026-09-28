@@ -3,6 +3,7 @@
 Derived data for the manuscript *"Urban functional regimes from presence and dwell time
 in mobile network data and their alignment with planned centers in Seoul"* (manuscript
 submitted). Code: <https://github.com/youngjour/dwell-functional-regimes>.
+Zenodo record: DOI [10.5281/zenodo.23006739](https://doi.org/10.5281/zenodo.23006739).
 
 The package holds the minimum set of files needed to rerun the post-model steps of the
 pipeline (steps 12 and 16-23: spatial robustness, transit validation, plan discordance,
@@ -96,5 +97,5 @@ Source: Seoul Metropolitan Government, Seoul Open Data Plaza.
 
 This derived-data package is released under **CC BY 4.0**
 (<https://creativecommons.org/licenses/by/4.0/>). When reusing it, please cite the
-manuscript and the Zenodo record, and attribute the original data to the Seoul
+manuscript and the Zenodo record (DOI 10.5281/zenodo.23006739), and attribute the original data to the Seoul
 Metropolitan Government (Seoul Open Data Plaza, KOGL Type 1).

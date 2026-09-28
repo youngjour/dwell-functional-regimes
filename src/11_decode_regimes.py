@@ -199,7 +199,7 @@ def main():
     for r in sm.group_by("admin_dong").agg(
         pl.len().alias("n_cells"),
         pl.col("dominant_functional").n_unique().alias("n_distinct_dom"),
-        pl.col("dominant_functional").mode().first().alias("modal_dom"),
+        pl.col("dominant_functional").mode().sort().first().alias("modal_dom"),   # ties -> first by name
         pl.col("func_entropy").mean().alias("mean_entropy"),
     ).iter_rows(named=True):
         rows.append(r)

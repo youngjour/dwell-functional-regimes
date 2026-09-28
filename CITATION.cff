@@ -14,6 +14,18 @@ keywords:
   - hidden semi-Markov model
   - urban functional zones
   - Seoul
+references:
+  - type: data
+    title: "Derived data: Urban functional regimes from presence and dwell time in mobile network data (Seoul)"
+    authors:
+      - family-names: Park
+        given-names: Youngjun
+    doi: 10.5281/zenodo.23006739
+    url: "https://doi.org/10.5281/zenodo.23006739"
+    publisher:
+      name: Zenodo
+    license: CC-BY-4.0
+    year: 2026
 preferred-citation:
   type: article
   title: "Urban functional regimes from presence and dwell time in mobile network data and their alignment with planned centers in Seoul"

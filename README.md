@@ -62,7 +62,7 @@ File names are those of the portal downloads; the scripts expect them as listed.
 
 ### Derived data (Zenodo)
 
-Zenodo record: DOI `TBD`. The package `dfr_derived_data.zip` (~78 MB) holds the decoded
+Zenodo record: DOI [`10.5281/zenodo.23006739`](https://doi.org/10.5281/zenodo.23006739). The package `dfr_derived_data.zip` (~78 MB) holds the decoded
 regime summaries, station/stop-cell maps, ridership tables, spatial reference files, the
 fitted models and model summaries needed to rerun the post-model steps (path b). It is
 released under **CC BY 4.0**; the original data are attributed to the Seoul Metropolitan
@@ -150,24 +150,29 @@ summarised below.
 | Day-night regime switch 52% (dwell-aware) vs 24% (presence-only) | `21_presence_vs_dwell.py` | `presence_vs_dwell_stats.json` → `daynight_switch` |
 | Presence-only vs dwell-aware agreement, ARI 0.38 | `21_presence_vs_dwell.py` | `presence_vs_dwell_stats.json` → `per_cell_dominant_agreement.ARI` (0.379; cell-bin level `label_agreement_cellbin.ARI` 0.375) |
 | Transit validation R², r (subway, bus) | `16_transit_validation.py` | `validation_stats.json` → `subway_alignment`, `bus_alignment_cell` |
-| χ², Cramér's V (station type x catchment regime) | `16_transit_validation.py` | `validation_stats.json` → `subway_typology` (see note below) |
+| χ², p, Cramér's V (station type x catchment regime); activity-commute stations with an activity-dominant catchment | `16_transit_validation.py` | `validation_stats.json` → `subway_typology` (`crosstab` row `activity_commute`, column `activity`) |
 | Density-controlled partial r | `18_conclusions_robustness.py` | `conclusions_robustness_stats.json` → `density_partial_corr` |
 | Presence-only vs dwell-aware external R² | `21_presence_vs_dwell.py` | `presence_vs_dwell_stats.json` → `external_validation_delta` |
 | Activity share by official hotspot category | `19_place_validation.py` | `place_validation_stats.json` → `category_regime` |
 | 99% of administrative dongs contain more than one dominant regime | `11_decode_regimes.py` | `regime_admin_discordance.json` → `pct_dong_multi_regime` |
 | 19% between-dong share of regime-composition variance | `12_regime_robustness.py` | `regime_robustness_stats.json` → `variance_decomp_eta2._aggregate_between_share` |
+| Records: 131,128,898 living-population cell-hour records, 322,384,974 stay-population records; 10,125 grid cells | `01_ingest.py`; `02_cell_master.py` | sum of `rows` over months in `results/logs/ingest_living_stats.json` / `ingest_stay_stats.json` (written by one `python src/01_ingest.py both` run over all 17 months; equal to the row counts of `processed/living_population/` and `processed/stay_population/`); `cell_master_counts.json` → `shapefile` |
 | 1,470 activity-core cells, 783 (53.3%) outside designated centers | `17_plan_discordance.py` | `plan_discordance_stats.json` → `active_not_planned` |
 | 28 emergent clusters, 21 touching a designated center | `18_conclusions_robustness.py` | `conclusions_robustness_stats.json` → `emergent` |
 | 7 clusters (25%) with centroid in an official hotspot | `19_place_validation.py`, `22_paper_tables.py` | `place_validation_stats.json` → `emergent_clusters_in_place_pct`; `tableS5_clusters.csv` |
 
 `*.json` files above are in `results/stats/` unless a path is given.
 
-**Note on the station-typology χ² and Cramér's V.** In step 16 the modal catchment
-regime of a station (`cat_dom_k1`) is taken with `max(set(...), key=list.count)`; when
-two regimes tie, the winner depends on Python's per-process string-hash seed. The
-regression statistics are unaffected, but χ² and Cramér's V vary between runs (χ² 55.6-77.2,
-V 0.307-0.362 over 14 runs; the manuscript values 65.0 / 0.332 are one such run). Set
-`PYTHONHASHSEED` to make a run repeatable.
+**Note on ties.** Modal (most frequent) categories are chosen deterministically: when
+two categories tie, the first in sort order wins (station catchment regime in step 16,
+dominant admin dong of an emergent cluster in step 18, modal regime per dong in step 11).
+The station-typology χ² and Cramér's V are therefore identical across runs and
+`PYTHONHASHSEED` values. The row and column order of `subway_typology.crosstab` in the
+JSON can differ between runs (see `crosstab_rows` / `crosstab_cols`).
+`results/stats/regime_admin_table.parquet` was written by step 11 before its tie rule
+was fixed (step 11 was not rerun); its `modal_dom` column can differ from the
+sort-order rule for 33 of the 56 dongs with a tied mode. The column is not used in the
+manuscript.
 
 ## Verification
 
@@ -176,7 +181,8 @@ with the original outputs: (a) steps 00, 03, 12, 15-19 and 21-23 on the original
 processed data, and (b) steps 12, 16-19 and 21-23 from the Zenodo package alone. Tables `table2_centers.tex`, `tableS4_threshold.tex`,
 `tableS5_clusters.tex`/`.csv`, `T2`, `T3`, `T5` are byte-identical in both paths; JSON
 statistics agree to a relative difference below 1e-12, except for the ordering of tied
-entries in ranked lists, the hash-seed dependence noted above, and float32 summation
+entries in ranked lists, the station-typology statistics (since made tie-deterministic,
+see the note above), and float32 summation
 noise (~3e-5 relative) in `dwell_summary.json`. Nine of the ten figures are
 pixel-identical to the manuscript figures; `external_validation` differs in 0.06% of
 pixels because semi-transparent points are drawn in a different row order.

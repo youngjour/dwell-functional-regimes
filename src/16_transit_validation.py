@@ -72,7 +72,7 @@ def catchment(gix, giy, L, k):
                     rr.append(v[0]); aa.append(v[1]); dd.append(v[2])
         res.append(np.mean(rr) if rr else np.nan)
         act.append(np.mean(aa) if aa else np.nan)
-        doms.append(max(set(dd), key=dd.count) if dd else None)
+        doms.append(max(sorted(set(dd)), key=dd.count) if dd else None)   # ties -> first by name
     return np.array(res), np.array(act), doms
 
 
