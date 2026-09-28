@@ -1,0 +1,5 @@
+tier,n_centers,n_active,pct_active,mean_activity_share,mean_frac_act_dom,n_above_city_mean,pct_above_city_mean
+도심,3,3,100.0,0.561,0.634,3,100.0
+광역중심,7,6,85.7,0.577,0.645,7,100.0
+지역중심,12,8,66.7,0.564,0.643,10,83.3
+지구중심,50,14,28.0,0.375,0.383,35,70.0

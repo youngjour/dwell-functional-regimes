@@ -1,0 +1,18 @@
+# data (raw + processed) and derived-data packages
+data/
+*.zip
+# secrets
+.env
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# large model artefacts (fitted models / model-input matrices are large and
+# reproducible; distributed via the Zenodo derived-data package)
+results/models/
+*.npy
+*.npz
+*.pkl
+# diagnostic plots of the model-fitting steps
+results/eda/
+results/logs/

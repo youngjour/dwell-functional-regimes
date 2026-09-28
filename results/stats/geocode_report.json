@@ -1,0 +1,22 @@
+{
+  "bus": {
+    "stops_total": 48297,
+    "geocoded": 44293,
+    "geocode_rate": 91.7,
+    "in_universe_cell": 41375,
+    "universe_rate_of_geocoded": 93.4
+  },
+  "subway": {
+    "stations_total": 533,
+    "matched_master": 529,
+    "match_rate": 99.2,
+    "in_universe_cell": 295,
+    "universe_rate_of_matched": 55.8,
+    "unmatched_stations": [
+      "당고개",
+      "자양(뚝섬한강공원)",
+      "한국항공대",
+      "평택지제"
+    ]
+  }
+}

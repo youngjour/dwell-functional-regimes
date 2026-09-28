@@ -1,0 +1,825 @@
+{
+  "area_aware_purity": {
+    "행정동": {
+      "n_units": 427,
+      "obs_mean_purity": 0.46,
+      "mean_cells_per_unit": 14.9,
+      "patch_null_mean_purity": 0.471,
+      "patch_z_mean": -0.07,
+      "obs_below_patch_null": true,
+      "shift_null_mean_purity": 0.523
+    },
+    "지역생활권": {
+      "n_units": 116,
+      "obs_mean_purity": 0.386,
+      "mean_cells_per_unit": 54.6,
+      "patch_null_mean_purity": 0.398,
+      "patch_z_mean": -0.07,
+      "obs_below_patch_null": true,
+      "shift_null_mean_purity": 0.443
+    },
+    "권역생활권": {
+      "n_units": 5,
+      "obs_mean_purity": 0.288,
+      "mean_cells_per_unit": 1266.0,
+      "patch_null_mean_purity": 0.289,
+      "patch_z_mean": 0.13,
+      "obs_below_patch_null": true,
+      "shift_null_mean_purity": 0.297
+    }
+  },
+  "threshold_sensitivity": [
+    {
+      "def": "abs_0.3",
+      "n_core_cells": 1844,
+      "active_not_planned_pct": 57.4,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 100.0,
+        "지역중심": 83.0,
+        "지구중심": 58.0
+      }
+    },
+    {
+      "def": "abs_0.4",
+      "n_core_cells": 1598,
+      "active_not_planned_pct": 55.3,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 86.0,
+        "지역중심": 75.0,
+        "지구중심": 42.0
+      }
+    },
+    {
+      "def": "abs_0.5",
+      "n_core_cells": 1380,
+      "active_not_planned_pct": 52.0,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 86.0,
+        "지역중심": 75.0,
+        "지구중심": 30.0
+      }
+    },
+    {
+      "def": "abs_0.6",
+      "n_core_cells": 1161,
+      "active_not_planned_pct": 50.0,
+      "tier_active_pct": {
+        "도심": 33.0,
+        "광역중심": 57.0,
+        "지역중심": 58.0,
+        "지구중심": 20.0
+      }
+    },
+    {
+      "def": "seoul_mean(0.23)",
+      "n_core_cells": 2016,
+      "active_not_planned_pct": 59.7,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 100.0,
+        "지역중심": 83.0,
+        "지구중심": 70.0
+      }
+    },
+    {
+      "def": "top_quartile",
+      "n_core_cells": 1590,
+      "active_not_planned_pct": 55.1,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 86.0,
+        "지역중심": 67.0,
+        "지구중심": 30.0
+      }
+    },
+    {
+      "def": "top_decile",
+      "n_core_cells": 638,
+      "active_not_planned_pct": 44.7,
+      "tier_active_pct": {
+        "도심": 0.0,
+        "광역중심": 0.0,
+        "지역중심": 17.0,
+        "지구중심": 6.0
+      }
+    },
+    {
+      "def": "dominant_actAB",
+      "n_core_cells": 1470,
+      "active_not_planned_pct": 53.3,
+      "tier_active_pct": {
+        "도심": 100.0,
+        "광역중심": 86.0,
+        "지역중심": 67.0,
+        "지구중심": 28.0
+      }
+    }
+  ],
+  "emergent": {
+    "n_emergent_cells": 783,
+    "gu_rank": [
+      {
+        "gu": "11680",
+        "len": 64
+      },
+      {
+        "gu": "11440",
+        "len": 61
+      },
+      {
+        "gu": "11710",
+        "len": 53
+      },
+      {
+        "gu": "11620",
+        "len": 51
+      },
+      {
+        "gu": "11650",
+        "len": 51
+      },
+      {
+        "gu": "11500",
+        "len": 50
+      },
+      {
+        "gu": "11200",
+        "len": 47
+      },
+      {
+        "gu": "11170",
+        "len": 42
+      },
+      {
+        "gu": "11215",
+        "len": 38
+      },
+      {
+        "gu": "11290",
+        "len": 36
+      },
+      {
+        "gu": "11230",
+        "len": 35
+      },
+      {
+        "gu": "11410",
+        "len": 30
+      },
+      {
+        "gu": "11560",
+        "len": 30
+      },
+      {
+        "gu": "11470",
+        "len": 23
+      },
+      {
+        "gu": "11380",
+        "len": 23
+      }
+    ],
+    "dong_rank": [
+      {
+        "admin_dong": "11440660",
+        "len": 13
+      },
+      {
+        "admin_dong": "11680510",
+        "len": 12
+      },
+      {
+        "admin_dong": "11410585",
+        "len": 12
+      },
+      {
+        "admin_dong": "11500620",
+        "len": 12
+      },
+      {
+        "admin_dong": "11170685",
+        "len": 11
+      },
+      {
+        "admin_dong": "11650530",
+        "len": 11
+      },
+      {
+        "admin_dong": "11650651",
+        "len": 11
+      },
+      {
+        "admin_dong": "11290600",
+        "len": 10
+      },
+      {
+        "admin_dong": "11500640",
+        "len": 9
+      },
+      {
+        "admin_dong": "11200550",
+        "len": 9
+      },
+      {
+        "admin_dong": "11380690",
+        "len": 9
+      },
+      {
+        "admin_dong": "11680545",
+        "len": 8
+      },
+      {
+        "admin_dong": "11560620",
+        "len": 8
+      },
+      {
+        "admin_dong": "11200690",
+        "len": 8
+      },
+      {
+        "admin_dong": "11215710",
+        "len": 8
+      }
+    ],
+    "n_clusters_ge5": 28,
+    "n_clusters_touching_center": 21,
+    "pct_clusters_touching_center": 75.0,
+    "clusters": [
+      {
+        "n_cells": 54,
+        "dominant_admin_dong": "11440660",
+        "gu": "11440",
+        "mean_activity_share": 0.771,
+        "cx": 949134.2592592592,
+        "cy": 1950995.3703703703,
+        "adj_centers": [
+          "신촌지역중심(서북권)",
+          "합정지구중심(서북권)",
+          "남가좌지구중심(서북권)"
+        ],
+        "adj_center_tiers": [
+          "지역중심",
+          "지구중심",
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          42,
+          15,
+          1
+        ],
+        "n_adj_pairs": 58,
+        "touches_center": true,
+        "cluster_id": 1
+      },
+      {
+        "n_cells": 37,
+        "dominant_admin_dong": "11200550",
+        "gu": "11200",
+        "mean_activity_share": 0.652,
+        "cx": 960212.8378378379,
+        "cy": 1949983.1081081082,
+        "adj_centers": [
+          "성수지역중심(동북권)",
+          "청량리왕십리광역중심(동북권)"
+        ],
+        "adj_center_tiers": [
+          "지역중심",
+          "광역중심"
+        ],
+        "adj_pair_counts": [
+          20,
+          14
+        ],
+        "n_adj_pairs": 34,
+        "touches_center": true,
+        "cluster_id": 2
+      },
+      {
+        "n_cells": 29,
+        "dominant_admin_dong": "11680510",
+        "gu": "11680",
+        "mean_activity_share": 0.725,
+        "cx": 958883.6206896552,
+        "cy": 1947323.2758620689,
+        "adj_centers": [
+          "강남도심(동남권)"
+        ],
+        "adj_center_tiers": [
+          "도심"
+        ],
+        "adj_pair_counts": [
+          40
+        ],
+        "n_adj_pairs": 40,
+        "touches_center": true,
+        "cluster_id": 3
+      },
+      {
+        "n_cells": 19,
+        "dominant_admin_dong": "11500620",
+        "gu": "11500",
+        "mean_activity_share": 0.743,
+        "cx": 938756.5789473684,
+        "cy": 1951348.6842105263,
+        "adj_centers": [
+          "공항지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          2
+        ],
+        "n_adj_pairs": 2,
+        "touches_center": true,
+        "cluster_id": 4
+      },
+      {
+        "n_cells": 16,
+        "dominant_admin_dong": "11170685",
+        "gu": "11170",
+        "mean_activity_share": 0.734,
+        "cx": 955750.0,
+        "cy": 1948656.25,
+        "adj_centers": [
+          "한남지구중심(도심권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          5
+        ],
+        "n_adj_pairs": 5,
+        "touches_center": true,
+        "cluster_id": 5
+      },
+      {
+        "n_cells": 15,
+        "dominant_admin_dong": "11650651",
+        "gu": "11650",
+        "mean_activity_share": 0.655,
+        "cx": 959608.3333333334,
+        "cy": 1942391.6666666667,
+        "adj_centers": [
+          "강남도심(동남권)"
+        ],
+        "adj_center_tiers": [
+          "도심"
+        ],
+        "adj_pair_counts": [
+          1
+        ],
+        "n_adj_pairs": 1,
+        "touches_center": true,
+        "cluster_id": 6
+      },
+      {
+        "n_cells": 12,
+        "dominant_admin_dong": "11620585",
+        "gu": "11620",
+        "mean_activity_share": 0.754,
+        "cx": 952062.5,
+        "cy": 1942375.0,
+        "adj_centers": [
+          "봉천지역중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지역중심"
+        ],
+        "adj_pair_counts": [
+          15
+        ],
+        "n_adj_pairs": 15,
+        "touches_center": true,
+        "cluster_id": 7
+      },
+      {
+        "n_cells": 12,
+        "dominant_admin_dong": "11230740",
+        "gu": "11230",
+        "mean_activity_share": 0.723,
+        "cx": 960937.5,
+        "cy": 1954937.5,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 8
+      },
+      {
+        "n_cells": 12,
+        "dominant_admin_dong": "11290600",
+        "gu": "11290",
+        "mean_activity_share": 0.655,
+        "cx": 958312.5,
+        "cy": 1954104.1666666667,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 9
+      },
+      {
+        "n_cells": 11,
+        "dominant_admin_dong": "11215710",
+        "gu": "11215",
+        "mean_activity_share": 0.861,
+        "cx": 962261.3636363636,
+        "cy": 1949715.9090909092,
+        "adj_centers": [
+          "성수지역중심(동북권)"
+        ],
+        "adj_center_tiers": [
+          "지역중심"
+        ],
+        "adj_pair_counts": [
+          8
+        ],
+        "n_adj_pairs": 8,
+        "touches_center": true,
+        "cluster_id": 10
+      },
+      {
+        "n_cells": 11,
+        "dominant_admin_dong": "11140615",
+        "gu": "11140",
+        "mean_activity_share": 0.663,
+        "cx": 957488.6363636364,
+        "cy": 1951920.4545454546,
+        "adj_centers": [
+          "한양도성도심(도심권)",
+          "동대문지역중심(도심권)"
+        ],
+        "adj_center_tiers": [
+          "도심",
+          "지역중심"
+        ],
+        "adj_pair_counts": [
+          8,
+          7
+        ],
+        "n_adj_pairs": 15,
+        "touches_center": true,
+        "cluster_id": 11
+      },
+      {
+        "n_cells": 11,
+        "dominant_admin_dong": "11560620",
+        "gu": "11560",
+        "mean_activity_share": 0.842,
+        "cx": 946602.2727272727,
+        "cy": 1948875.0,
+        "adj_centers": [
+          "당산지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          6
+        ],
+        "n_adj_pairs": 6,
+        "touches_center": true,
+        "cluster_id": 12
+      },
+      {
+        "n_cells": 11,
+        "dominant_admin_dong": "11650530",
+        "gu": "11650",
+        "mean_activity_share": 0.732,
+        "cx": 956875.0,
+        "cy": 1943102.2727272727,
+        "adj_centers": [
+          "강남도심(동남권)"
+        ],
+        "adj_center_tiers": [
+          "도심"
+        ],
+        "adj_pair_counts": [
+          15
+        ],
+        "n_adj_pairs": 15,
+        "touches_center": true,
+        "cluster_id": 13
+      },
+      {
+        "n_cells": 9,
+        "dominant_admin_dong": "11620645",
+        "gu": "11620",
+        "mean_activity_share": 0.716,
+        "cx": 949958.3333333334,
+        "cy": 1942875.0,
+        "adj_centers": [
+          "신림지구중심(서남권)",
+          "봉천지역중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심",
+          "지역중심"
+        ],
+        "adj_pair_counts": [
+          8,
+          3
+        ],
+        "n_adj_pairs": 11,
+        "touches_center": true,
+        "cluster_id": 14
+      },
+      {
+        "n_cells": 9,
+        "dominant_admin_dong": "11545610",
+        "gu": "11545",
+        "mean_activity_share": 0.763,
+        "cx": 946375.0,
+        "cy": 1941541.6666666667,
+        "adj_centers": [
+          "가산대림광역중심(서남권)",
+          "독산지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "광역중심",
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          13,
+          5
+        ],
+        "n_adj_pairs": 18,
+        "touches_center": true,
+        "cluster_id": 15
+      },
+      {
+        "n_cells": 7,
+        "dominant_admin_dong": "11410565",
+        "gu": "11410",
+        "mean_activity_share": 0.764,
+        "cx": 952589.2857142857,
+        "cy": 1951553.5714285714,
+        "adj_centers": [
+          "한양도성도심(도심권)"
+        ],
+        "adj_center_tiers": [
+          "도심"
+        ],
+        "adj_pair_counts": [
+          10
+        ],
+        "n_adj_pairs": 10,
+        "touches_center": true,
+        "cluster_id": 16
+      },
+      {
+        "n_cells": 7,
+        "dominant_admin_dong": "11620685",
+        "gu": "11620",
+        "mean_activity_share": 0.657,
+        "cx": 948339.2857142857,
+        "cy": 1943196.4285714286,
+        "adj_centers": [
+          "난곡사거리지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          3
+        ],
+        "n_adj_pairs": 3,
+        "touches_center": true,
+        "cluster_id": 17
+      },
+      {
+        "n_cells": 7,
+        "dominant_admin_dong": "11710566",
+        "gu": "11710",
+        "mean_activity_share": 0.814,
+        "cx": 967232.1428571428,
+        "cy": 1946660.7142857143,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 18
+      },
+      {
+        "n_cells": 6,
+        "dominant_admin_dong": "11710562",
+        "gu": "11710",
+        "mean_activity_share": 0.689,
+        "cx": 965583.3333333334,
+        "cy": 1946083.3333333333,
+        "adj_centers": [
+          "잠실광역중심(동남권)"
+        ],
+        "adj_center_tiers": [
+          "광역중심"
+        ],
+        "adj_pair_counts": [
+          14
+        ],
+        "n_adj_pairs": 14,
+        "touches_center": true,
+        "cluster_id": 19
+      },
+      {
+        "n_cells": 6,
+        "dominant_admin_dong": "11215780",
+        "gu": "11215",
+        "mean_activity_share": 0.683,
+        "cx": 962833.3333333334,
+        "cy": 1950625.0,
+        "adj_centers": [
+          "군자지구중심(동북권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          8
+        ],
+        "n_adj_pairs": 8,
+        "touches_center": true,
+        "cluster_id": 20
+      },
+      {
+        "n_cells": 6,
+        "dominant_admin_dong": "11620665",
+        "gu": "11620",
+        "mean_activity_share": 0.852,
+        "cx": 950250.0,
+        "cy": 1941416.6666666667,
+        "adj_centers": [
+          "미림지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          13
+        ],
+        "n_adj_pairs": 13,
+        "touches_center": true,
+        "cluster_id": 21
+      },
+      {
+        "n_cells": 6,
+        "dominant_admin_dong": "11710520",
+        "gu": "11710",
+        "mean_activity_share": 0.845,
+        "cx": 965333.3333333334,
+        "cy": 1947500.0,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 22
+      },
+      {
+        "n_cells": 6,
+        "dominant_admin_dong": "11215850",
+        "gu": "11215",
+        "mean_activity_share": 0.64,
+        "cx": 963125.0,
+        "cy": 1949125.0,
+        "adj_centers": [
+          "구의지구중심(동북권)",
+          "성수지역중심(동북권)"
+        ],
+        "adj_center_tiers": [
+          "지구중심",
+          "지역중심"
+        ],
+        "adj_pair_counts": [
+          8,
+          1
+        ],
+        "n_adj_pairs": 9,
+        "touches_center": true,
+        "cluster_id": 23
+      },
+      {
+        "n_cells": 5,
+        "dominant_admin_dong": "11620725",
+        "gu": "11620",
+        "mean_activity_share": 0.609,
+        "cx": 947325.0,
+        "cy": 1942575.0,
+        "adj_centers": [
+          "가산대림광역중심(서남권)",
+          "난곡사거리지구중심(서남권)"
+        ],
+        "adj_center_tiers": [
+          "광역중심",
+          "지구중심"
+        ],
+        "adj_pair_counts": [
+          8,
+          1
+        ],
+        "n_adj_pairs": 9,
+        "touches_center": true,
+        "cluster_id": 24
+      },
+      {
+        "n_cells": 5,
+        "dominant_admin_dong": "11650550",
+        "gu": "11650",
+        "mean_activity_share": 0.705,
+        "cx": 954825.0,
+        "cy": 1944925.0,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 25
+      },
+      {
+        "n_cells": 5,
+        "dominant_admin_dong": "11590605",
+        "gu": "11590",
+        "mean_activity_share": 0.697,
+        "cx": 952375.0,
+        "cy": 1945325.0,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 26
+      },
+      {
+        "n_cells": 5,
+        "dominant_admin_dong": "11170520",
+        "gu": "11170",
+        "mean_activity_share": 0.648,
+        "cx": 954375.0,
+        "cy": 1949225.0,
+        "adj_centers": [],
+        "adj_center_tiers": [],
+        "adj_pair_counts": [],
+        "n_adj_pairs": 0,
+        "touches_center": false,
+        "cluster_id": 27
+      },
+      {
+        "n_cells": 5,
+        "dominant_admin_dong": "11170555",
+        "gu": "11170",
+        "mean_activity_share": 0.643,
+        "cx": 952825.0,
+        "cy": 1949525.0,
+        "adj_centers": [
+          "용산광역중심(도심권)"
+        ],
+        "adj_center_tiers": [
+          "광역중심"
+        ],
+        "adj_pair_counts": [
+          6
+        ],
+        "n_adj_pairs": 6,
+        "touches_center": true,
+        "cluster_id": 28
+      }
+    ]
+  },
+  "density_partial_corr": {
+    "k1": {
+      "res_vs_residential": {
+        "raw_r": 0.554,
+        "partial_r": 0.554,
+        "p": 5.321942331012296e-25,
+        "n": 295
+      },
+      "res_vs_activity": {
+        "raw_r": -0.667,
+        "partial_r": -0.696,
+        "p": 7.688240228246508e-44,
+        "n": 295
+      }
+    },
+    "k2": {
+      "res_vs_residential": {
+        "raw_r": 0.589,
+        "partial_r": 0.591,
+        "p": 4.311607312887245e-29,
+        "n": 295
+      },
+      "res_vs_activity": {
+        "raw_r": -0.747,
+        "partial_r": -0.756,
+        "p": 9.19957695317262e-56,
+        "n": 295
+      }
+    }
+  }
+}

@@ -1,0 +1,1111 @@
+{
+  "plan_crs": 5174,
+  "saenggwon_discordance": [
+    {
+      "n_units": 427,
+      "mean_distinct_dom": 4.208,
+      "mean_purity": 0.46,
+      "median_purity": 0.429,
+      "pct_multi": 99.1,
+      "between_var": 0.1901,
+      "unit": "행정동(admin)"
+    },
+    {
+      "n_units": 116,
+      "mean_distinct_dom": 5.44,
+      "mean_purity": 0.386,
+      "median_purity": 0.367,
+      "pct_multi": 100.0,
+      "between_var": 0.1109,
+      "unit": "지역생활권"
+    },
+    {
+      "n_units": 5,
+      "mean_distinct_dom": 6.0,
+      "mean_purity": 0.288,
+      "median_purity": 0.299,
+      "pct_multi": 100.0,
+      "between_var": 0.0146,
+      "unit": "권역생활권"
+    }
+  ],
+  "activity_dominant_rule": "center activity-dominant if fraction of its cells (centroid within polygon) with dominant_functional in ['activity_A', 'activity_B'] > 0.5",
+  "seoul_mean_activity_share": 0.2269,
+  "jungsim_concordance_by_tier": [
+    {
+      "tier": "도심",
+      "n_centers": 3,
+      "n_active": 3,
+      "pct_active": 100.0,
+      "mean_activity_share": 0.561,
+      "mean_frac_act_dom": 0.634,
+      "n_above_city_mean": 3,
+      "pct_above_city_mean": 100.0
+    },
+    {
+      "tier": "광역중심",
+      "n_centers": 7,
+      "n_active": 6,
+      "pct_active": 85.7,
+      "mean_activity_share": 0.577,
+      "mean_frac_act_dom": 0.645,
+      "n_above_city_mean": 7,
+      "pct_above_city_mean": 100.0
+    },
+    {
+      "tier": "지역중심",
+      "n_centers": 12,
+      "n_active": 8,
+      "pct_active": 66.7,
+      "mean_activity_share": 0.564,
+      "mean_frac_act_dom": 0.643,
+      "n_above_city_mean": 10,
+      "pct_above_city_mean": 83.3
+    },
+    {
+      "tier": "지구중심",
+      "n_centers": 50,
+      "n_active": 14,
+      "pct_active": 28.0,
+      "mean_activity_share": 0.375,
+      "mean_frac_act_dom": 0.383,
+      "n_above_city_mean": 35,
+      "pct_above_city_mean": 70.0
+    }
+  ],
+  "planned_not_active": [
+    {
+      "jungsim": "수락지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.004858299595141701,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "홍제지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.007135944168640909,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "고덕지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.014073645652593019,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "삼양지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.01489524321294823,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "개포지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.019144013880855987,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "목동지역중심(서남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 17,
+      "mean_act": 0.030705469534007827,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "신정네거리지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.03212125875090627,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "아현지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.04476576055523424,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "도곡지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.06624252940042413,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "개봉지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 6,
+      "mean_act": 0.10171809545556759,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "암사지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.10516120988088952,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "전농지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.12724117987275882,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "신풍지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.13984962406015036,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "남가좌지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.1528050896471949,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "오금지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.18816271447850397,
+      "frac_act_dom": 0.0,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "종암지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.37362637362637363,
+      "frac_act_dom": 0.0,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "까치산지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.4393290919606709,
+      "frac_act_dom": 0.0,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "미아지역중심(동북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 11,
+      "mean_act": 0.19615168137158043,
+      "frac_act_dom": 0.18181818181818182,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "방배지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.25106998264893,
+      "frac_act_dom": 0.25,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "중곡지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.2676113360323886,
+      "frac_act_dom": 0.25,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "강서지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.3972527472527473,
+      "frac_act_dom": 0.25,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "월계지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.16217466743782535,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "석관지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2560632350106034,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신사지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2674378253325622,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "응암지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2843647580489686,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "군자지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.30306535569693466,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "화곡지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.36032388663967607,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "난곡사거리지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.36629026203825266,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "매헌지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 24,
+      "mean_act": 0.3918969804137205,
+      "frac_act_dom": 0.3333333333333333,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "시흥지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 8,
+      "mean_act": 0.27873138841423806,
+      "frac_act_dom": 0.375,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "청량리왕십리광역중심(동북권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 26,
+      "mean_act": 0.3718436488872942,
+      "frac_act_dom": 0.38461538461538464,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "방학지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 5,
+      "mean_act": 0.3267750114434005,
+      "frac_act_dom": 0.4,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "연신내불광지역중심(서북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 8,
+      "mean_act": 0.3810324477686195,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "상도지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.39519953730480045,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "공항지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.4098322729901677,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "면목지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.41104751106396986,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "쌍문지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.4633024869866975,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "반포지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.49057258530942743,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "망우지역중심(동북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 8,
+      "mean_act": 0.5419172932330827,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "한남지구중심(도심권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.574177863454794,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "동선지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.5897339502602661,
+      "frac_act_dom": 0.5,
+      "above_city_mean": true
+    }
+  ],
+  "centers": [
+    {
+      "jungsim": "강남도심(동남권)",
+      "jungsim_tier": "도심",
+      "n_cells": 213,
+      "mean_act": 0.630696688310222,
+      "frac_act_dom": 0.7136150234741784,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "영등포여의도도심(서남권)",
+      "jungsim_tier": "도심",
+      "n_cells": 105,
+      "mean_act": 0.5076098001958628,
+      "frac_act_dom": 0.5523809523809524,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "한양도성도심(도심권)",
+      "jungsim_tier": "도심",
+      "n_cells": 237,
+      "mean_act": 0.5457874078272488,
+      "frac_act_dom": 0.6371308016877637,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "가산대림광역중심(서남권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 55,
+      "mean_act": 0.6326204849990791,
+      "frac_act_dom": 0.7272727272727273,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "마곡광역중심(서남권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 34,
+      "mean_act": 0.538582344959228,
+      "frac_act_dom": 0.5588235294117647,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "상암수색광역중심(서북권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 21,
+      "mean_act": 0.6148756651829294,
+      "frac_act_dom": 0.7142857142857143,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "용산광역중심(도심권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 37,
+      "mean_act": 0.5688385533025307,
+      "frac_act_dom": 0.6486486486486487,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "잠실광역중심(동남권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 23,
+      "mean_act": 0.6738832372454153,
+      "frac_act_dom": 0.782608695652174,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "창동상계광역중심(동북권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 10,
+      "mean_act": 0.6392343931424083,
+      "frac_act_dom": 0.7,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "청량리왕십리광역중심(동북권)",
+      "jungsim_tier": "광역중심",
+      "n_cells": 26,
+      "mean_act": 0.3718436488872942,
+      "frac_act_dom": 0.38461538461538464,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "동대문지역중심(도심권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 8,
+      "mean_act": 0.6635584912286079,
+      "frac_act_dom": 0.875,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "마포공덕지역중심(서북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 10,
+      "mean_act": 0.5545036897523261,
+      "frac_act_dom": 0.7,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "망우지역중심(동북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 8,
+      "mean_act": 0.5419172932330827,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "목동지역중심(서남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 17,
+      "mean_act": 0.030705469534007827,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "미아지역중심(동북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 11,
+      "mean_act": 0.19615168137158043,
+      "frac_act_dom": 0.18181818181818182,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "봉천지역중심(서남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 10,
+      "mean_act": 0.7059456333140544,
+      "frac_act_dom": 0.7,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "사당이수지역중심(서남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 10,
+      "mean_act": 0.7467731389555057,
+      "frac_act_dom": 0.8,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "성수지역중심(동북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 18,
+      "mean_act": 0.7649559862158539,
+      "frac_act_dom": 0.9444444444444444,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "수서문정지역중심(동남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 21,
+      "mean_act": 0.6329999091466469,
+      "frac_act_dom": 0.7619047619047619,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신촌지역중심(서북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 22,
+      "mean_act": 0.8932252777626989,
+      "frac_act_dom": 0.9545454545454546,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "연신내불광지역중심(서북권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 8,
+      "mean_act": 0.3810324477686195,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "천호길동지역중심(동남권)",
+      "jungsim_tier": "지역중심",
+      "n_cells": 15,
+      "mean_act": 0.6574050510892616,
+      "frac_act_dom": 0.8,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "가락지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.7487565066512435,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "강서지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.3972527472527473,
+      "frac_act_dom": 0.25,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "개봉지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 6,
+      "mean_act": 0.10171809545556759,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "개포지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.019144013880855987,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "고덕지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.014073645652593019,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "공항지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.4098322729901677,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "구로지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 7,
+      "mean_act": 0.46628801744915865,
+      "frac_act_dom": 0.5714285714285714,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "구의지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 8,
+      "mean_act": 0.6490330855257964,
+      "frac_act_dom": 0.75,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "군자지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.30306535569693466,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "까치산지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.4393290919606709,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "난곡사거리지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.36629026203825266,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "남가좌지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.1528050896471949,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "노량진지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 8,
+      "mean_act": 0.60722425026821,
+      "frac_act_dom": 0.625,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "당산지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.8448235974551763,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "도곡지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.06624252940042413,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "독산지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.6301886584593351,
+      "frac_act_dom": 0.6666666666666666,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "동선지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.5897339502602661,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "등촌지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.6904954694428378,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "매헌지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 24,
+      "mean_act": 0.3918969804137205,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "면목지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.41104751106396986,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "미림지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.9411965600827971,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "반포지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.49057258530942743,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "방배지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.25106998264893,
+      "frac_act_dom": 0.25,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "방학지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 5,
+      "mean_act": 0.3267750114434005,
+      "frac_act_dom": 0.4,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "삼양지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.01489524321294823,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "상도지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.39519953730480045,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "석관지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2560632350106034,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "수락지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.004858299595141701,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "수유지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 8,
+      "mean_act": 0.5494505494505495,
+      "frac_act_dom": 0.625,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "시흥지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 8,
+      "mean_act": 0.27873138841423806,
+      "frac_act_dom": 0.375,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신대방지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.5962984384037016,
+      "frac_act_dom": 0.6666666666666666,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신림지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 7,
+      "mean_act": 0.9316174833144976,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신사지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2674378253325622,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "신정네거리지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.03212125875090627,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "신풍지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.13984962406015036,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "쌍문지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.4633024869866975,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "아현지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.04476576055523424,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "암사지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.10516120988088952,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "오금지구중심(동남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.18816271447850397,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "오류지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.5827747405267187,
+      "frac_act_dom": 0.75,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "월계지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.16217466743782535,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "응암지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.2843647580489686,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "장한평지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 5,
+      "mean_act": 0.6750849038734279,
+      "frac_act_dom": 0.8,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "전농지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 1,
+      "mean_act": 0.12724117987275882,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "종암지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 2,
+      "mean_act": 0.37362637362637363,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "중곡지구중심(동북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.2676113360323886,
+      "frac_act_dom": 0.25,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "한남지구중심(도심권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.574177863454794,
+      "frac_act_dom": 0.5,
+      "is_active": false,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "합정지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 4,
+      "mean_act": 0.7773857721226143,
+      "frac_act_dom": 1.0,
+      "is_active": true,
+      "above_city_mean": true
+    },
+    {
+      "jungsim": "홍제지구중심(서북권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.007135944168640909,
+      "frac_act_dom": 0.0,
+      "is_active": false,
+      "above_city_mean": false
+    },
+    {
+      "jungsim": "화곡지구중심(서남권)",
+      "jungsim_tier": "지구중심",
+      "n_cells": 3,
+      "mean_act": 0.36032388663967607,
+      "frac_act_dom": 0.3333333333333333,
+      "is_active": false,
+      "above_city_mean": true
+    }
+  ],
+  "active_not_planned": {
+    "n_activity_dom_cells": 1470,
+    "n_outside_any_center": 783,
+    "pct_outside": 53.3,
+    "top_admin_dong_outside": [
+      {
+        "admin_dong": "11440660",
+        "len": 13
+      },
+      {
+        "admin_dong": "11680510",
+        "len": 12
+      },
+      {
+        "admin_dong": "11410585",
+        "len": 12
+      },
+      {
+        "admin_dong": "11500620",
+        "len": 12
+      },
+      {
+        "admin_dong": "11170685",
+        "len": 11
+      },
+      {
+        "admin_dong": "11650651",
+        "len": 11
+      },
+      {
+        "admin_dong": "11650530",
+        "len": 11
+      },
+      {
+        "admin_dong": "11290600",
+        "len": 10
+      },
+      {
+        "admin_dong": "11200550",
+        "len": 9
+      },
+      {
+        "admin_dong": "11380690",
+        "len": 9
+      },
+      {
+        "admin_dong": "11500640",
+        "len": 9
+      },
+      {
+        "admin_dong": "11560620",
+        "len": 8
+      }
+    ]
+  }
+}

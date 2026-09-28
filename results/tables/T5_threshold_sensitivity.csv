@@ -1,0 +1,9 @@
+definition,n_core_cells,active_not_planned_pct,도심_active%,지구중심_active%
+abs_0.3,1844,57.4,100.0,58.0
+abs_0.4,1598,55.3,100.0,42.0
+abs_0.5,1380,52.0,100.0,30.0
+abs_0.6,1161,50.0,33.0,20.0
+seoul_mean(0.23),2016,59.7,100.0,70.0
+top_quartile,1590,55.1,100.0,30.0
+top_decile,638,44.7,0.0,6.0
+dominant_actAB,1470,53.3,100.0,28.0

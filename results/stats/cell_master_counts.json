@@ -1,0 +1,15 @@
+{
+  "living_any": 8880,
+  "stay_any": 7135,
+  "intersection": 7132,
+  "active_25_all": 7870,
+  "active_50_all": 7062,
+  "active_100_all": 6108,
+  "intersection_active_25": 6870,
+  "intersection_active_50": 6357,
+  "intersection_active_100": 5668,
+  "shapefile": 10125,
+  "coords_missing": 1,
+  "admin_missing": 0,
+  "UNIVERSE": 6357
+}

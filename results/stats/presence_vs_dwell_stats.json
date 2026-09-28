@@ -1,0 +1,217 @@
+{
+  "label_agreement_cellbin": {
+    "ARI": 0.375,
+    "NMI": 0.477,
+    "n": 950000
+  },
+  "crosstab_po_x_dwell": [
+    [
+      132,
+      42018,
+      1045,
+      4739,
+      77881,
+      11636,
+      49576
+    ],
+    [
+      20694,
+      0,
+      0,
+      22925,
+      0,
+      0,
+      0
+    ],
+    [
+      60767,
+      0,
+      0,
+      9780,
+      140,
+      0,
+      2024
+    ],
+    [
+      33839,
+      0,
+      0,
+      16541,
+      0,
+      0,
+      36
+    ],
+    [
+      16023,
+      28,
+      291,
+      742,
+      11973,
+      15,
+      39227
+    ],
+    [
+      896,
+      56167,
+      25265,
+      3512,
+      507,
+      61682,
+      1586
+    ],
+    [
+      0,
+      7573,
+      225455,
+      1330,
+      0,
+      122116,
+      21839
+    ]
+  ],
+  "per_cell_dominant_agreement": {
+    "ARI": 0.379,
+    "NMI": 0.461,
+    "n": 6357
+  },
+  "daynight_switch": {
+    "dwell_aware_pct": 52.4,
+    "presence_only_pct": 23.9
+  },
+  "dwell_split_by_po_state": [
+    {
+      "po_state": 0,
+      "n_cells": 1302,
+      "n_dwell_regimes": 7,
+      "top_dwell": "activity_B",
+      "mean_share_residential": 0.101,
+      "mean_share_activityB": 0.372
+    },
+    {
+      "po_state": 1,
+      "n_cells": 432,
+      "n_dwell_regimes": 5,
+      "top_dwell": "low_density",
+      "mean_share_residential": 0.011,
+      "mean_share_activityB": 0.004
+    },
+    {
+      "po_state": 2,
+      "n_cells": 511,
+      "n_dwell_regimes": 7,
+      "top_dwell": "low_density",
+      "mean_share_residential": 0.012,
+      "mean_share_activityB": 0.025
+    },
+    {
+      "po_state": 3,
+      "n_cells": 339,
+      "n_dwell_regimes": 6,
+      "top_dwell": "low_density",
+      "mean_share_residential": 0.013,
+      "mean_share_activityB": 0.006
+    },
+    {
+      "po_state": 4,
+      "n_cells": 378,
+      "n_dwell_regimes": 4,
+      "top_dwell": "mid_density",
+      "mean_share_residential": 0.017,
+      "mean_share_activityB": 0.154
+    },
+    {
+      "po_state": 5,
+      "n_cells": 888,
+      "n_dwell_regimes": 7,
+      "top_dwell": "activity_A",
+      "mean_share_residential": 0.32,
+      "mean_share_activityB": 0.02
+    },
+    {
+      "po_state": 6,
+      "n_cells": 2507,
+      "n_dwell_regimes": 5,
+      "top_dwell": "dense_mixed",
+      "mean_share_residential": 0.327,
+      "mean_share_activityB": 0.002
+    }
+  ],
+  "external_validation_delta": {
+    "k1": {
+      "dwell_res_axis": {
+        "r": 0.554,
+        "R2": 0.307,
+        "p": 4.229570116067252e-25,
+        "n": 295
+      },
+      "po_res_axis": {
+        "r": 0.291,
+        "R2": 0.085,
+        "p": 3.4668802177719943e-07,
+        "n": 295
+      },
+      "dwell_act_axis": {
+        "r": -0.667,
+        "R2": 0.445,
+        "p": 2.7334803602561726e-39,
+        "n": 295
+      },
+      "po_act_axis": {
+        "r": -0.73,
+        "R2": 0.533,
+        "p": 2.4588213582263466e-50,
+        "n": 295
+      },
+      "dwell_full_comp": {
+        "R2": 0.592,
+        "adj_R2": 0.582,
+        "n": 295,
+        "k": 7
+      },
+      "po_full_comp": {
+        "R2": 0.572,
+        "adj_R2": 0.562,
+        "n": 295,
+        "k": 7
+      }
+    },
+    "k2": {
+      "dwell_res_axis": {
+        "r": 0.589,
+        "R2": 0.347,
+        "p": 5.501743230186152e-29,
+        "n": 295
+      },
+      "po_res_axis": {
+        "r": 0.312,
+        "R2": 0.097,
+        "p": 4.49496612764048e-08,
+        "n": 295
+      },
+      "dwell_act_axis": {
+        "r": -0.747,
+        "R2": 0.558,
+        "p": 6.756112631985996e-54,
+        "n": 295
+      },
+      "po_act_axis": {
+        "r": -0.77,
+        "R2": 0.593,
+        "p": 4.544737397445119e-59,
+        "n": 295
+      },
+      "dwell_full_comp": {
+        "R2": 0.649,
+        "adj_R2": 0.641,
+        "n": 295,
+        "k": 7
+      },
+      "po_full_comp": {
+        "R2": 0.629,
+        "adj_R2": 0.619,
+        "n": 295,
+        "k": 7
+      }
+    }
+  }
+}

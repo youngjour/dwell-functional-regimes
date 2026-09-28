@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript below."
+title: "dwell-functional-regimes: code for 'Urban functional regimes from presence and dwell time in mobile network data and their alignment with planned centers in Seoul'"
+type: software
+authors:
+  - family-names: Park
+    given-names: Youngjun
+license: MIT
+repository-code: "https://github.com/youngjour/dwell-functional-regimes"
+date-released: 2026-09-28
+keywords:
+  - mobile network data
+  - dwell time
+  - hidden semi-Markov model
+  - urban functional zones
+  - Seoul
+preferred-citation:
+  type: article
+  title: "Urban functional regimes from presence and dwell time in mobile network data and their alignment with planned centers in Seoul"
+  authors:
+    - family-names: Park
+      given-names: Youngjun
+  status: submitted
+  year: 2026

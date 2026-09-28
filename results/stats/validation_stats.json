@@ -1,0 +1,110 @@
+{
+  "subway_alignment": {
+    "k0": {
+      "vs_residential_share": {
+        "n": 295,
+        "r": 0.31,
+        "R2": 0.096,
+        "slope": 0.812,
+        "p": 5.480797447955037e-08,
+        "pearson_res_vs_resid": 0.31
+      },
+      "vs_activity_share": {
+        "n": 295,
+        "r": -0.485,
+        "R2": 0.236,
+        "slope": -0.511,
+        "p": 7.605312596689418e-19,
+        "pearson_res_vs_resid": -0.485
+      }
+    },
+    "k1": {
+      "vs_residential_share": {
+        "n": 295,
+        "r": 0.554,
+        "R2": 0.307,
+        "slope": 2.096,
+        "p": 4.229570116067252e-25,
+        "pearson_res_vs_resid": 0.554
+      },
+      "vs_activity_share": {
+        "n": 295,
+        "r": -0.667,
+        "R2": 0.445,
+        "slope": -1.075,
+        "p": 2.7334803602561726e-39,
+        "pearson_res_vs_resid": -0.667
+      }
+    },
+    "k2": {
+      "vs_residential_share": {
+        "n": 295,
+        "r": 0.589,
+        "R2": 0.347,
+        "slope": 2.667,
+        "p": 5.501743230186312e-29,
+        "pearson_res_vs_resid": 0.589
+      },
+      "vs_activity_share": {
+        "n": 295,
+        "r": -0.747,
+        "R2": 0.558,
+        "slope": -1.475,
+        "p": 6.756112631984936e-54,
+        "pearson_res_vs_resid": -0.747
+      }
+    }
+  },
+  "subway_n_stations": 295,
+  "subway_typology": {
+    "crosstab_rows": [
+      "no_pattern",
+      "activity_commute",
+      "resid_commute"
+    ],
+    "crosstab_cols": [
+      "activity",
+      "residential",
+      "other"
+    ],
+    "crosstab": [
+      [
+        14,
+        0,
+        20
+      ],
+      [
+        65,
+        2,
+        25
+      ],
+      [
+        42,
+        18,
+        109
+      ]
+    ],
+    "chi2": 55.6,
+    "p": 2.428049226615077e-11,
+    "cramers_v": 0.307
+  },
+  "bus_alignment_cell": {
+    "vs_residential_share": {
+      "n": 3922,
+      "r": 0.276,
+      "R2": 0.076,
+      "slope": 0.431,
+      "p": 2.804941110491983e-69,
+      "pearson_res_vs_resid": 0.276
+    },
+    "vs_activity_share": {
+      "n": 3922,
+      "r": -0.393,
+      "R2": 0.154,
+      "slope": -0.409,
+      "p": 8.980171387181783e-145,
+      "pearson_res_vs_resid": -0.393
+    },
+    "n_cells": 3922
+  }
+}
