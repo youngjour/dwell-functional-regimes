@@ -62,7 +62,8 @@ File names are those of the portal downloads; the scripts expect them as listed.
 
 ### Derived data (Zenodo)
 
-Zenodo record: DOI [`10.5281/zenodo.23006739`](https://doi.org/10.5281/zenodo.23006739). The package `dfr_derived_data.zip` (~78 MB) holds the decoded
+Zenodo record: DOI [`10.5281/zenodo.23006739`](https://doi.org/10.5281/zenodo.23006739). The package (six zips, ~78 MB in total: `dfr_derived_data_core.zip` plus five
+`dfr_derived_data_bus_*.zip` with the monthly bus-stop ridership) holds the decoded
 regime summaries, station/stop-cell maps, ridership tables, spatial reference files, the
 fitted models and model summaries needed to rerun the post-model steps (path b). It is
 released under **CC BY 4.0**; the original data are attributed to the Seoul Metropolitan
@@ -116,15 +117,20 @@ computationally heavy.
 model fitting:
 
 ```bash
-unzip dfr_derived_data.zip -d /path/to            # -> /path/to/dfr_derived_data/
+# all six zips downloaded to /path/to; run from the repository root
+(cd /path/to && for z in dfr_derived_data_*.zip; do unzip -o "$z"; done)   # -> /path/to/dfr_derived_data/
 export DFR_DATA_DIR=/path/to/dfr_derived_data
 export DFR_MODELS_DIR=/path/to/dfr_derived_data/models
 cp /path/to/dfr_derived_data/stats/* results/stats/   # model-step JSON (already in the repo)
 for s in 12 16 17 18 19 21 22 23; do python src/${s}_*.py; done
 ```
 
-This regenerates every manuscript table and figure. The verification of both paths is
-summarised below.
+This regenerates every manuscript table and figure. The five bus zips are needed only
+for the transit validation (step 16): with the core zip alone, step 16 writes the subway
+table `transit_validation.parquet` and then stops at the bus part, so
+`validation_stats.json` (transit R² / r, station-typology χ², Cramér's V) is missing,
+while steps 12, 17-19 and 21-23 still run and reproduce all tables and figures. The
+verification of both paths is summarised below.
 
 ## Paper output ↔ script
 

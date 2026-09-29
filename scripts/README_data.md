@@ -11,10 +11,35 @@ robustness and emergent clusters, 121-place validation, presence-only vs dwell-a
 comparison, manuscript tables and figures) **without** the ~20 GB raw mobile-network
 tables and **without** refitting the models.
 
+## Files in this record
+
+The package is split by content into six zips (each under 20 MB). **Unzip all of them
+into the same folder**; together they form one `dfr_derived_data/` tree (the zips do
+not overlap).
+
+| zip | content | size |
+|---|---|---|
+| `dfr_derived_data_core.zip` | everything except the monthly bus-stop ridership partitions: `README_data.md`, `processed/` (cell tables, station/stop maps, subway ridership, grid, plan, places), `Seoul Plan/`, `models/`, `stats/` | ~6.5 MB |
+| `dfr_derived_data_bus_2025a.zip` | `processed/bus_ridership_bystop/year_month=202501` ... `202504` | ~16.7 MB |
+| `dfr_derived_data_bus_2025b.zip` | `processed/bus_ridership_bystop/year_month=202505` ... `202508` | ~16.7 MB |
+| `dfr_derived_data_bus_2025c.zip` | `processed/bus_ridership_bystop/year_month=202509` ... `202512` | ~17.0 MB |
+| `dfr_derived_data_bus_2026a.zip` | `processed/bus_ridership_bystop/year_month=202601` ... `202603` | ~12.4 MB |
+| `dfr_derived_data_bus_2026b.zip` | `processed/bus_ridership_bystop/year_month=202604`, `202605` | ~8.4 MB |
+
+`SHA256SUMS.txt` lists the checksum of every zip (`sha256sum -c SHA256SUMS.txt`).
+
+The bus-stop ridership is used only by the transit validation (step 16). With the core
+zip alone, step 16 writes the subway table `processed/transit_validation.parquet` and
+then stops with an error at the bus part, so `validation_stats.json` (subway and bus
+R² / r, station-typology χ² and Cramér's V) is not produced. All other steps (12,
+17-19, 21-23) still run and reproduce every manuscript table and figure. To reproduce
+the transit-validation statistics, download all six zips.
+
 ## How to use
 
 ```bash
-unzip dfr_derived_data.zip                       # -> dfr_derived_data/
+mkdir -p /path/to && cd /path/to
+for z in dfr_derived_data_*.zip; do unzip -o "$z"; done   # -> /path/to/dfr_derived_data/
 export DFR_DATA_DIR=/path/to/dfr_derived_data
 export DFR_MODELS_DIR=/path/to/dfr_derived_data/models
 cp dfr_derived_data/stats/*  <repo>/results/stats/   # only if missing in the repo
