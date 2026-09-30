@@ -3,6 +3,9 @@
 Code to reproduce the results of the manuscript "Urban functional regimes from presence
 and dwell time in mobile network data and their alignment with planned centers in Seoul".
 
+Code DOI (v1.0.0): [`10.5281/zenodo.23045022`](https://doi.org/10.5281/zenodo.23045022).
+Derived data DOI: [`10.5281/zenodo.23006739`](https://doi.org/10.5281/zenodo.23006739).
+
 The pipeline builds a 250 m cell x day x time-bin emission table from Seoul's public
 living-population (presence) and stay-population (dwell time) data, fits a dwell-aware
 hidden semi-Markov model (HSMM, K = 7) and a model ladder, decodes functional regimes for

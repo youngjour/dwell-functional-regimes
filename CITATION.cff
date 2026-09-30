@@ -2,11 +2,14 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the manuscript below."
 title: "dwell-functional-regimes: code for 'Urban functional regimes from presence and dwell time in mobile network data and their alignment with planned centers in Seoul'"
 type: software
+version: 1.0.0
+doi: 10.5281/zenodo.23045022
 authors:
   - family-names: Park
     given-names: Youngjun
 license: MIT
 repository-code: "https://github.com/youngjour/dwell-functional-regimes"
+url: "https://doi.org/10.5281/zenodo.23045022"
 date-released: 2026-09-28
 keywords:
   - mobile network data
